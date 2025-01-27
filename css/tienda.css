@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -6,4 +11,18 @@ header{
 
 body{
     margin: 0 10vw;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    width: 30%;
+}
+
+section{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
 }

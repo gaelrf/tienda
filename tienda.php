@@ -7,7 +7,7 @@ if (!isset($_SESSION["usuario_id"])) {
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -29,6 +29,15 @@ if (!isset($_SESSION["usuario_id"])) {
     </header>
     <main>
         <aside>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-store"></i> Tienda</a></li> 
+                <li><a href="#"><i class="fa-solid fa-truck-field"></i> Proovedores</a></li>
+                <li><a href="#"><i class="fa-solid fa-person"></i> Clientes</a></li>
+                <li><a href="#"><i class="fa-solid fa-layer-group"></i> Categorías</a></li>
+                <li><a href="#"><i class="fa-solid fa-boxes-stacked"></i> Productos</a></li>
+                <li><a href="#"><i class="fa-solid fa-cash-register"></i> Ventas</a></li>
+
+            </ul>
         </aside>
         <section>
         </section>
