@@ -10,9 +10,9 @@ if(isset($_POST["nombre"])){
     $stm->bindParam(":web", $web);
     $stm->execute();
     $id=$conexion->lastInsertId();
-    header("Location: proovedores?id=".$id);
+    header("Location: proveedores?id=".$id);
 }else{
 
-header("Location: proovedores");
+header("Location: proveedores");
 }
 ?>
