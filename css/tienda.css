@@ -21,6 +21,24 @@ aside{
     width: 30%;
 }
 
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    margin: 10px 0;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+aside ul li i{
+    margin-right: 10px;
+    width: 20px;
+}
+
 section{
     width: 70%;
     display: flex;
