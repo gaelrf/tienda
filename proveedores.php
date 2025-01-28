@@ -28,8 +28,10 @@ $result = $conexion->query($sql);
                     <td>
                         <a href='editar_proveedor?id=" . $row['id'] . "'>Editar</a>
                         <a href='eliminar_proveedor?id=" . $row['id'] . "'>Eliminar</a>
-                        </td>
-                        </tr>");
+                        <a href='proveedores?id=" . $row['id'] . "'>Añadir</a>
+                        <a href='proveedor?id=" . $row['id'] . "'>Ver</a>
+                    </td>
+                    </tr>");
                 }
                 ?>
             </tbody>
@@ -70,8 +72,11 @@ $result = $conexion->query($sql);
                     <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
                     <label for="telefono">Telefono:</label>
                     <input type="text" name="telefono" id="telefono" required placeholder="Telefono del proveedor">
+                    <br>
+                    <input type="submit" value="Guardar">
                 </form> <?php } ?>
         </div>
+        <button onclick="window.location.href='proveedores'">Volver</button>
     </section>
 </main>
 <?php

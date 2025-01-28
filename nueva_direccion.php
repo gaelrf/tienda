@@ -1,6 +1,7 @@
 <?php
 
 if (isset($_POST["calle"])) {
+    include 'conexion.php';
     $id = $_POST["id"];
     $calle = $_POST["calle"];
     $numero = $_POST["numero"];
@@ -15,5 +16,6 @@ if (isset($_POST["calle"])) {
     $stm->bindParam(":comuna", $comuna);
     $stm->bindParam(":ciudad", $ciudad);
     $stm->execute();
+    header("Location: proveedores?&id=$id");
 }
 ?>
